@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/losturista/static/css/main.073c9b0a.css",
-    "main.js": "/losturista/static/js/main.52c0d12f.js",
+    "main.js": "/losturista/static/js/main.bff296a9.js",
     "static/js/787.b2fe6a24.chunk.js": "/losturista/static/js/787.b2fe6a24.chunk.js",
     "static/media/logo.svg": "/losturista/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/losturista/index.html",
     "main.073c9b0a.css.map": "/losturista/static/css/main.073c9b0a.css.map",
-    "main.52c0d12f.js.map": "/losturista/static/js/main.52c0d12f.js.map",
+    "main.bff296a9.js.map": "/losturista/static/js/main.bff296a9.js.map",
     "787.b2fe6a24.chunk.js.map": "/losturista/static/js/787.b2fe6a24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.52c0d12f.js"
+    "static/js/main.bff296a9.js"
   ]
 }
