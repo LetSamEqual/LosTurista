@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
-import blogPosts from "../../blogPosts/blogPosts.json";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import blogPosts from "../../blogPosts/blogPosts.json";
+
 
 const BlogPostPage = () => {
   const { slug } = useParams();
