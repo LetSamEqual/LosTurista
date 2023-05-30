@@ -1,8 +1,7 @@
 import blogPosts from "../../blogPosts/blogPosts.json";
-import BlogPostPage from "../blogPostPage/blogPostPage"
 import BlogPostTile from "../blogPostTiles/blogPostTiles"
 
-import { Link, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
