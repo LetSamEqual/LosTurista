@@ -17,11 +17,7 @@ const BlogPostPage = () => {
             </div>
           );
         }
-        else {return (
-          <div>
-            <h1>404</h1>
-          </div>
-        )};
+        return null;
       })}
     </div>
   );
