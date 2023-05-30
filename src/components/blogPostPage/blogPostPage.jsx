@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import blogPosts from "../../blogPosts/blogPosts.json";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const BlogPostPage = () => {
   const { slug } = useParams();
@@ -12,8 +13,8 @@ const BlogPostPage = () => {
         if (posts.slug === slug) {
           return (
             <div>
-              <h1>{posts.blogPostTitle}</h1>
-              <p>{posts.blogPostBodyCopy}</p>
+              <ReactMarkdown className="blogPostTitle">{posts.blogPostTitle}</ReactMarkdown>
+              <ReactMarkdown className="blogPostBodyCopy">{posts.blogPostBodyCopy}</ReactMarkdown>
             </div>
           );
         }
