@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LosTurista/static/css/main.073c9b0a.css",
-    "main.js": "/LosTurista/static/js/main.5f8e6c17.js",
+    "main.css": "/LosTurista/static/css/main.3456e139.css",
+    "main.js": "/LosTurista/static/js/main.dc031aaf.js",
     "static/js/787.b2fe6a24.chunk.js": "/LosTurista/static/js/787.b2fe6a24.chunk.js",
     "index.html": "/LosTurista/index.html",
-    "main.073c9b0a.css.map": "/LosTurista/static/css/main.073c9b0a.css.map",
-    "main.5f8e6c17.js.map": "/LosTurista/static/js/main.5f8e6c17.js.map",
+    "main.3456e139.css.map": "/LosTurista/static/css/main.3456e139.css.map",
+    "main.dc031aaf.js.map": "/LosTurista/static/js/main.dc031aaf.js.map",
     "787.b2fe6a24.chunk.js.map": "/LosTurista/static/js/787.b2fe6a24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5f8e6c17.js"
+    "static/css/main.3456e139.css",
+    "static/js/main.dc031aaf.js"
   ]
 }
