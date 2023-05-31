@@ -1,11 +1,19 @@
 import "./blogPostTiles.css";
+import background from '/Users/sam/Documents/hobbyCode/React/losturista/src/photos/tileImages/pexels-mauricio-thomsen-3488382.jpg'
+
 
 const BlogPostTile = ({ blogPostData }) => {
-  console.log(blogPostData.id);
+
+  const backgroundImageStyle = {
+    backgroundImage: `url("${blogPostData.tileImageBackground}")`,
+    backgroundSize: 'cover',
+  }
+  console.log(background);
+
 
   return (
     <div className="tileContainer">
-      <div className="tileImage"></div>
+      <div className="tileImage" style={backgroundImageStyle}></div>
       <div className="tileTextContainer">
         <div className="tileHeadingContainer">
           <h2 className="tileHeading">{blogPostData.tileTitle}</h2>

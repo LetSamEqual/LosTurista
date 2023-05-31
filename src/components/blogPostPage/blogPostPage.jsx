@@ -13,7 +13,7 @@ const BlogPostPage = () => {
       {blogPosts.map((posts) => {
         if (posts.slug === slug) {
           return (
-            <div>
+            <div key={blogPosts.id}>
               <ReactMarkdown className="blogPostTitle">{posts.blogPostTitle}</ReactMarkdown>
               <ReactMarkdown className="blogPostBodyCopy">{posts.blogPostBodyCopy}</ReactMarkdown>
             </div>

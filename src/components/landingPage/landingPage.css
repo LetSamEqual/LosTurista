@@ -1,0 +1,71 @@
+.blogTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+}
+
+.blogTitle{
+    display: inline;
+    text-decoration: underline;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 3em;
+    color: #F9F5E3;
+}
+
+.headingImageContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/Users/sam/Documents/hobbyCode/React/losturista/src/photos/backgroundImages/pexels-patrick-gamelkoorn-13787832.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogIntroContainer{
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+    height: 25vh;
+    width: 80vw;
+    min-width: 60vw;
+}
+
+.tileLinks{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.blogIntroTitleContainer{
+    grid-template-areas: "inner-div";
+}
+
+.blogIntroTitle{
+    font-family: 'Cormorant', serif;
+    font-size: 10vh;
+    color: #F9F5E3;
+    grid-area: "inner-div";
+}
+
+.blogIntroSubheaderContainer{
+    grid-area: "inner-div";
+}
+
+.blogIntroSubheader{
+    grid-area: "inner-div";
+    font-family: 'Cormorant', serif;
+    font-size: 3vh;
+    color: #F9F5E3;
+}
+
+.blogPostTilesContainer{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}

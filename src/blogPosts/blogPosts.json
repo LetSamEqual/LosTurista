@@ -2,43 +2,47 @@
   {
     "id": "1",
     "slug": "first-blog-post",
-    "tileTitle": "First Blog Post (tile)",
-    "tileSubheader": "First blog post subheader (tile)",
+    "tileTitle": "First blog post (tile)",
+    "tileSubheader": "First blog post subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     "tileImage": "",
     "blogPostTitle": "# First blog post",
-    "blogPostSubheader": "This is the first blog post's subheader",
-    "blogPostBodyCopy": "This is the first blog post's body copy. ![testPhoto](/Users/sam/Documents/hobbyCode/React/losturista/src/photos/testPhotos/IMG_5506.png)   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "blogPostSubheader": "This is the first blog post's subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "blogPostBodyCopy": "This is the first blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "tileImageBackground": "/LosTurista/static/media/pexels-elisabeth-ende-7431676.a0d7895fdceee2b24e7e.jpg"
   },
 
   {
     "id": "2",
     "slug": "second-blog-post",
-    "tileTitle": "Second Blog Post (tile)",
-    "tileSubheader": "Second blog post subheader (tile)",
+    "tileTitle": "Second blog post (tile)",
+    "tileSubheader": "Second blog post subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     "tileImage": "",
     "blogPostTitle": "# Second blog post",
-    "blogPostSubheader": "This is the second blog post's subheader",
-    "blogPostBodyCopy": "This is the second blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "blogPostSubheader": "This is the second blog post's subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "blogPostBodyCopy": "This is the second blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "tileImageBackground": "/LosTurista/static/media/pexels-devan-sagliani-5953535.08551e20018ff168bf6b.jpg"
   },
 
   {
     "id": "3",
     "slug": "third-blog-post",
-    "tileTitle": "Third Blog Post (tile)",
-    "tileSubheader": "Third blog post subheader (tile)",
+    "tileTitle": "Third blog post (tile)",
+    "tileSubheader": "Third blog post subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     "tileImage": "",
     "blogPostTitle": "# *Third* blog post",
-    "blogPostSubheader": "This is the third blog post's subheader",
-    "blogPostBodyCopy": "This is the third blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "blogPostSubheader": "This is the third blog post's subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "blogPostBodyCopy": "This is the third blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "tileImageBackground": "/LosTurista/static/media/pexels-intricate-explorer-6598390.1ce95d591eccf2fe8810.jpg"
   },
   {
     "id": "4",
     "slug": "fourth-blog-post",
-    "tileTitle": "fourth Blog Post (tile)",
-    "tileSubheader": "fourth blog post subheader (tile)",
+    "tileTitle": "Fourth blog post (tile)",
+    "tileSubheader": "Fourth blog post subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. )",
     "tileImage": "",
     "blogPostTitle": "# fourth blog post",
-    "blogPostSubheader": "This is the fourth blog post's subheader",
-    "blogPostBodyCopy": "This is the fourth blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "blogPostSubheader": "This is the fourth blog post's subheader. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "blogPostBodyCopy": "This is the fourth blog post's body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "tileImageBackground": "/LosTurista/static/media/pexels-mauricio-thomsen-3488382.e0fbc35449f9324127d7.jpg"
   }
 ]
