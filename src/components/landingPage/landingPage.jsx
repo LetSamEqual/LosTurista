@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => {
 
-
   return (
     <div className="landingPageContainer">
       <div className="blogTitleContainer">
