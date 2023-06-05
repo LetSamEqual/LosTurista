@@ -1,5 +1,4 @@
 import "./blogPostTiles.css";
-import background from '/Users/sam/Documents/hobbyCode/React/losturista/src/photos/tileImages/pexels-mauricio-thomsen-3488382.jpg'
 
 
 const BlogPostTile = ({ blogPostData }) => {
@@ -8,7 +7,6 @@ const BlogPostTile = ({ blogPostData }) => {
     backgroundImage: `url("${blogPostData.tileImageBackground}")`,
     backgroundSize: 'cover',
   }
-  console.log(background);
 
 
   return (
