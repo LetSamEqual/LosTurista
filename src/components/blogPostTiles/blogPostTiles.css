@@ -1,45 +1,72 @@
-.tileContainer{
-    width: 400px;
-    height: 600px;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
+.tileContainer {
+  width: 400px;
+  height: 100%;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
 }
 
-.tileImage{
-    width: 100%;
-    height: 60%;
-    background-size: cover;
+.tileImage {
+  width: 350px;
+  height: 350px;
 }
 
-.tileTextContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    color: black;
+.tileThumbnail {
+  width: 100%;
+  height: 100%;
+  top: -50px;
+  left: -35px;
+  display: block;
+  z-index: 999;
+  cursor: pointer;
 }
 
-.tileHeadingContainer{
-    width: 350px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Archivo Narrow', sans-serif;
+.tileTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  color: black;
 }
 
-.tileHeading{
-    display: inline;
-    font-size: 2em;
+.tileHeadingContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1em;
 }
 
-.tileSubheaderContainer{
-    width: 90%;
-    height: 150px;
-    font-family: 'Cormorant', serif;
-    font-size: 1.5em;
+.tileHeading {
+  display: inline;
+  font-size: 2em;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.tileSubheaderContainer {
+  width: 100%;
+  height: 150px;
+  font-family: "Cormorant", serif;
+  font-size: 1.5em;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+
+
+.tileContainer:hover{
+  transform: scale(1.02);
 }
