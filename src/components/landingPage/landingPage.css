@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.066);
 }
 
 .blogTitleContainer{
@@ -17,28 +18,28 @@
 }
 
 .blogTitle{
-    display: inline;
     text-decoration: underline;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 3em;
-    color: #F9F5E3;
+    color: #1F1300;
 }
 
 .headingImageContainer{
     height: 100vh;
     width: 100%;
-    background-image: url('https://sthamericablogphotos.s3.ap-southeast-2.amazonaws.com/pexels-patrick-gamelkoorn-13787832.jpg');
+    background-image: url('https://sthamericablogphotos.s3.ap-southeast-2.amazonaws.com/pexels-carolyn-3345082.jpg');
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .blogIntroContainer{
-    text-align: center;
+    text-align: left;
     height: 25vh;
-    width: 80vw;
-    min-width: 60vw;
+    max-width: 58vw;
+    margin-left: 100px;
 }
 
 .tileLinks{
@@ -46,29 +47,25 @@
     text-decoration: inherit;
 }
 
-.blogIntroTitleContainer{
-    grid-template-areas: "inner-div";
-}
-
 .blogIntroTitle{
     font-family: 'Cormorant', serif;
     font-size: 10vh;
-    color: #F9F5E3;
-    grid-area: "inner-div";
+    color: #1F1300;
 }
 
 .blogIntroSubheaderContainer{
-    grid-area: "inner-div";
+    text-align:left;
+    width: 50vw;
 }
 
 .blogIntroSubheader{
-    grid-area: "inner-div";
     font-family: 'Cormorant', serif;
     font-size: 3vh;
-    color: #F9F5E3;
+    color: #1F1300;
 }
 
 .blogPostTilesContainer{
+    margin: 100px;
     max-width: 1000px;
     padding: 20px;
     display: flex;
@@ -76,4 +73,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    border-left: 3px solid #1F1300;
+    border-right: 3px solid #1F1300;
 }

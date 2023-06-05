@@ -8,12 +8,9 @@ const BlogPostTile = ({ blogPostData }) => {
 
   return (
     <div className="tileContainer">
+      <div className="tileImageTopAndBottomBorder">
       <div className="tileImage" style={backgroundImageStyle}>
-        <img
-          src={blogPostData.tileImageBackground}
-          alt={blogPostData.tileImageBackgroundAlt}
-          className="tileThumbnail"
-        />
+      </div>
       </div>
       <div className="tileTextContainer">
         <div className="tileHeadingContainer">
