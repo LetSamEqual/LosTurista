@@ -63,3 +63,35 @@
   transform: scale(1.02);
   background-color: rgba(0, 0, 0, 0.040);
 }
+
+@media screen and (max-width: 768px) {
+  .tileContainer{
+    width: 250px;
+  }
+
+  .tileImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tileHeadingContainer{
+    height: 20px;
+  }
+
+  .tileHeading{
+    font-size: 1.8em;
+  }
+
+  .tileSubheaderContainer{
+    font-size: 1.2em;
+  }
+
+}
+
+/* @media (min-width:320px)
+@media (min-width:481px)
+@media (min-width:641px) 
+@media (min-width:961px)
+@media (min-width:1025px) 
+@media (min-width:1281px)
+*/
