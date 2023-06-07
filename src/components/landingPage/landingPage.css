@@ -1,82 +1,104 @@
-.landingPageContainer{
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.066);
+.landingPageContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #343330;
+  /* background-color: #D9D5D2; */
 }
 
-.blogTitleContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 8vh;
-    position: fixed;
-    z-index: 999;
+.blogTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  z-index: 999;
 }
 
-.blogTitle{
-    text-decoration: underline;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 3em;
-    color: #1F1300;
+.blogTitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  color: white;
 }
 
-.headingImageContainer{
-    height: 100vh;
-    width: 100%;
-    background-image: url('https://sthamericablogphotos.s3.ap-southeast-2.amazonaws.com/pexels-carolyn-3345082.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    margin-bottom: 50px;
+.headingImageContainer {
+  height: 100vh;
+  width: 100%;
+  min-height: 600px;
+  min-width: 500px;
+  background-image: url("https://sthamericablogphotos.s3.ap-southeast-2.amazonaws.com/pexels-carolyn-3345082.jpg");
+  background-size: cover;
+  background-position: right 0% bottom 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.blogIntroContainer{
+.blogIntroContainer {
+  text-align: left;
+  height: 100svh;
+  height: 100vh;
+  min-height: 600px;
+  max-width: 38vw;
+  min-width: 380px;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #343330b7;
+}
+
+.tileLinks {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.blogIntroTitle {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  font-style: italic;
+  color: whitesmoke;
+  width: 87%;
+  margin: 10px;
+  padding: 0;
+}
+
+.finalApostrophe{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: clamp(1rem, 2vw + 1rem, 4rem);
+    font-style: italic;
     text-align: left;
-    height: 25vh;
-    max-width: 58vw;
-    margin-left: 100px;
+    color: whitesmoke;
+    padding: 0;
 }
 
-.tileLinks{
-    color: inherit;
-    text-decoration: inherit;
+.blogIntroSubheader {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: calc(17px + 3 * ((100vw - 320px) / 680));
+  font-style: italic;
+  color: whitesmoke;
+  text-align: left;
+  width: 87%;
+  line-height: clamp(1.5);
+  margin: 10px;
+  padding: 0;
 }
 
-.blogIntroTitle{
-    font-family: 'Cormorant', serif;
-    font-size: 10vh;
-    color: #1F1300;
+.blogPostTilesContainer {
+  margin: 100px;
+  max-width: 1000px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-left: 3px solid rgb(178, 178, 178);
+  border-right: 3px solid rgb(178, 178, 178);
 }
-
-.blogIntroSubheaderContainer{
-    text-align:left;
-    width: 50vw;
-}
-
-.blogIntroSubheader{
-    font-family: 'Cormorant', serif;
-    font-size: 3vh;
-    color: #1F1300;
-}
-
-.blogPostTilesContainer{
-    margin: 100px;
-    max-width: 1000px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    border-left: 3px solid #1F1300;
-    border-right: 3px solid #1F1300;
-}
-
+/* 
 @media screen and (max-width: 480px) {
     .headingImageContainer{
      overflow: hidden;
@@ -93,7 +115,7 @@
 
     .blogIntroTitle{
         font-family: 'Cormorant', serif;
-        font-size: 9vh;
+        font-size: 9rem;
         color: #1F1300;
     }
     
@@ -104,7 +126,7 @@
     
     .blogIntroSubheader{
         font-family: 'Cormorant', serif;
-        font-size: 3vh;
+        font-size: 3rem;
         color: #1F1300;
     }
 
@@ -147,4 +169,4 @@
        .blogTitle{
            font-size: 2em;
        }
- }
+ } */

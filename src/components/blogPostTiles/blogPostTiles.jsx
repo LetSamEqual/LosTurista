@@ -6,11 +6,17 @@ const BlogPostTile = ({ blogPostData }) => {
     backgroundSize: "cover",
   };
 
+  const backgroundColours = ["backgroundSalmon", "backgroundBlue", "backgroundLightBlue", "backgroundYellow", "backgroundGreen"];
+
+  function getBackgroundColour(potentialColours) {
+    const rndmNumber = Math.floor(Math.random() * 5);
+    return backgroundColours[rndmNumber]
+  }
+
   return (
-    <div className="tileContainer">
+    <div className={`tileContainer ${getBackgroundColour(backgroundColours)}`} >
       <div className="tileImageTopAndBottomBorder">
-      <div className="tileImage" style={backgroundImageStyle}>
-      </div>
+        <div className="tileImage" style={backgroundImageStyle}></div>
       </div>
       <div className="tileTextContainer">
         <div className="tileHeadingContainer">

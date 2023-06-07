@@ -8,6 +8,57 @@
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  border-radius: 10px;
+}
+
+.backgroundSalmon{
+  background-color: #343330;
+  color: rgb(198, 197, 197);
+  transition: 0.5s;
+}
+
+.backgroundSalmon:hover{
+  background-color: #886176;
+}
+
+.backgroundBlue{
+  background-color: #343330;
+  color: rgb(198, 197, 197);
+  transition: 0.5s;
+}
+
+.backgroundBlue:hover{
+  background-color: #384865;
+}
+
+.backgroundLightBlue{
+  background-color: #343330;
+  transition: 0.5s;
+  color: rgb(198, 197, 197);
+}
+
+.backgroundLightBlue:hover{
+  background-color: #5780a5;
+}
+
+.backgroundYellow{
+  background-color: #343330;
+  color: rgb(198, 197, 197);
+  transition: 0.5s;
+}
+
+.backgroundYellow:hover{
+  background-color: #a07d37;
+}
+
+.backgroundGreen{
+  background-color: #343330;
+  color: rgb(198, 197, 197);
+  transition: 0.5s;
+}
+
+.backgroundGreen:hover{
+  background-color: #415844;
 }
 
 .tileImage {
@@ -16,8 +67,9 @@
 }
 
 .tileImageTopAndBottomBorder{
-  padding: 7px;
+  padding: 8px;
   background-color: black;
+  border-radius: 5px;
 }
 
 .tileTextContainer {
@@ -26,9 +78,7 @@
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
-  color: black;
   margin-top: 10px;
-  border-bottom: 1px solid black;
 }
 
 .tileHeadingContainer {
@@ -39,6 +89,7 @@
   justify-content: center;
   font-family: "Archivo Narrow", sans-serif;
   font-size: 1em;
+
 }
 
 .tileHeading {
@@ -61,7 +112,6 @@
 
 .tileContainer:hover{
   transform: scale(1.02);
-  background-color: rgba(0, 0, 0, 0.040);
 }
 
 @media screen and (max-width: 768px) {

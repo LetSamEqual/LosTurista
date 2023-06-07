@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import blogPosts from "../../blogPosts/blogPosts.json";
+import "./blogPostPage.css"
 
 
 const BlogPostPage = () => {
@@ -9,7 +10,9 @@ const BlogPostPage = () => {
   console.log(slug);
 
   return (
-    <div>
+    <div className="blogPostPage">
+      <div className="landingImage"> </div>
+      <div className="blogPostContent">
       {blogPosts.map((posts) => {
         if (posts.slug === slug) {
           return (
@@ -21,6 +24,8 @@ const BlogPostPage = () => {
         }
         return null;
       })}
+      </div>
+
     </div>
   );
 };
