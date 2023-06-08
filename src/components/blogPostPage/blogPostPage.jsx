@@ -10,21 +10,20 @@ const BlogPostPage = () => {
   console.log(slug);
 
   return (
-    <div className="blogPostPage">
-      <div className="landingImage"> </div>
-      <div className="blogPostContent">
+    <div>
       {blogPosts.map((posts) => {
         if (posts.slug === slug) {
           return (
-            <div key={blogPosts.id}>
+            <div key={blogPosts.id} className="blogPostPage" style={{backgroundImage: `url("${posts.blogPostBackgroundImage}")`}}>
+              <div className="blogPostContent">
               <ReactMarkdown className="blogPostTitle">{posts.blogPostTitle}</ReactMarkdown>
               <ReactMarkdown className="blogPostBodyCopy">{posts.blogPostBodyCopy}</ReactMarkdown>
+              </div>
             </div>
           );
         }
         return null;
       })}
-      </div>
 
     </div>
   );
