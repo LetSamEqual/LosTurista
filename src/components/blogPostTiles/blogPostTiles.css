@@ -1,3 +1,5 @@
+
+
 .tileContainer {
   width: 400px;
   height: 100%;
@@ -6,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   transition: 0.5s;
   border-radius: 10px;
 }
@@ -83,7 +85,7 @@
 
 .tileHeadingContainer {
   width: 100%;
-  height: 50px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,11 +100,13 @@
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   transition: all .5s ease;
+  text-align: center;
+  margin: 0px;
 }
 
 .tileSubheaderContainer {
   width: 100%;
-  height: 150px;
+  height: 100%;
   font-family: "Cormorant", serif;
   font-size: 1.5em;
   -webkit-transition: all .5s ease;
@@ -110,11 +114,15 @@
   transition: all .5s ease;
 }
 
+.tileSubheader{
+  margin: 3px;
+}
+
 .tileContainer:hover{
   transform: scale(1.02);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .tileContainer{
     width: 250px;
   }
@@ -125,15 +133,62 @@
   }
 
   .tileHeadingContainer{
-    height: 20px;
+    margin-top: 10px;
   }
 
   .tileHeading{
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
 
   .tileSubheaderContainer{
-    font-size: 1.2em;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 481) and (max-width: 768px) {
+  .tileContainer{
+    width: 450px;
+  }
+
+  .tileImage {
+    width: 400px;
+    height: 400px;
+  }
+
+  .tileHeadingContainer{
+    margin-top: 10px;
+  }
+
+  .tileHeading{
+    font-size: 2.5em;
+  }
+
+  .tileSubheaderContainer{
+    font-size: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+  .tileContainer{
+    width: 500px;
+  }
+
+  .tileImage {
+    width: 400px;
+    height: 400px;
+  }
+
+  .tileHeadingContainer{
+    margin-top: 15px;
+  }
+
+  .tileHeading{
+    font-size: 2.3em;
+  }
+
+  .tileSubheaderContainer{
+    font-size: 1.8em;
   }
 
 }
