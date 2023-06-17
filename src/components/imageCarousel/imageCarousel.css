@@ -1,0 +1,107 @@
+.imageCarouselContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 90vh;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 8px solid black;
+    max-width: 70vw;
+    height: 50vw;
+}
+
+.wittyDescription{
+    width: 95%;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: calc(20px + 3 * ((100vw - 320px) / 680));
+}
+
+.buttonsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background: #343330b9;
+    color: whitesmoke;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover {
+    background: #343330;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 480px) {
+    .imageCarouselContainer{
+        height: 50vh;
+    }
+    
+    .images{
+    border: 4px solid black;
+    max-width: 365px;
+    max-height: 365px;
+    min-height: 350px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 481px) and (max-width: 699px) {
+    .imageCarouselContainer{
+        height: 40vh;
+    }
+    
+    .images{
+    border: 4px solid black;
+    max-width: 600px;
+    max-height: 600px;
+    min-height: 550px;
+    }
+    }
+  
+  
+  @media only screen and (min-width: 700px) and (max-width: 980px) {
+    .imageCarouselContainer{
+        height: 70vh;
+    }
+    
+    .images{
+    border: 4px solid black;
+    max-width: 680px;
+    max-height: 680px;
+    min-height: 550px;
+    }
+    }
+  

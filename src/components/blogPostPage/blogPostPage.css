@@ -50,16 +50,22 @@
 h1{
     margin: 0px;
 }
-
-/* h1{
-    font-family: "Cormorant", serif;
-    font-size: calc(35px + 10 * ((100vw - 320px) / 680));
-} */
-
-/* p {
-  width: 80%;
-  text-align: left;
-  overflow: scroll;
-  font-family: "Cormorant", serif;
-  font-size: calc(20px + 3 * ((100vw - 320px) / 680));
-} */
+@media only screen and (max-width: 480px) {
+    .blogPostContent {
+        width: 94%;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 481px) and (max-width: 699px) {
+    .blogPostContent {
+        width: 94%;
+    }
+    }
+  
+  
+  @media only screen and (min-width: 700px) and (max-width: 980px) {
+    .blogPostContent {
+        width: 94%;
+    }
+    }

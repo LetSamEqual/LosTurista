@@ -42,7 +42,7 @@ const LandingPage = () => {
         {blogPosts.map((blogPostData) => {
           return (
             <Link to={`/${blogPostData.slug}`} className="tileLinks">
-              <BlogPostTile key={blogPostData.id} blogPostData={blogPostData} />
+              <BlogPostTile key={blogPostData.key} blogPostData={blogPostData} />
             </Link>
           );
         })}
