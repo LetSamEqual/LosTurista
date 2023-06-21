@@ -20,6 +20,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 .headingImageContainer {
@@ -115,7 +116,7 @@
   }
 
   .blogIntroContainer {
-    min-width: 250px;
+    min-width: 235px;
     margin-left: 15px;
     border-radius: 20px;
     background-color: rgba(245, 245, 245, 0.36)

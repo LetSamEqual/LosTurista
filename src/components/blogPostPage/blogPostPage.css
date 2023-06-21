@@ -23,7 +23,6 @@
   margin-top: 80vh;
   margin-top: 80svh;
   margin-bottom: 10vh;
-  gap: 20px;
 }
 
 .blogPostTitle {
@@ -39,8 +38,9 @@
 
 .blogPostBodyCopy {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 80%;
   text-align: left;
   overflow: scroll;
