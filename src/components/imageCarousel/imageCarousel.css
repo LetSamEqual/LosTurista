@@ -20,7 +20,7 @@
     justify-content: center; 
     border: 8px solid black;
     max-width: 70vw;
-    height: 50vw;
+    height: 45vw;
 }
 
 .wittyDescription{
@@ -66,17 +66,18 @@ button:active {
 
 @media only screen and (max-width: 480px) {
     .imageCarouselContainer{
-        height: 50vh;
+        height: 40vh;
     }
     
     .images{
     border: 4px solid black;
-    max-width: 365px;
-    max-height: 365px;
-    min-height: 350px;
+    width: 450px;
+    min-width: 150px;
+    height: 350px;
+    min-height: 150px;
     }
   }
-  
+
   
   @media only screen and (min-width: 481px) and (max-width: 699px) {
     .imageCarouselContainer{
@@ -94,14 +95,14 @@ button:active {
   
   @media only screen and (min-width: 700px) and (max-width: 980px) {
     .imageCarouselContainer{
-        height: 70vh;
+        height: 40vh;
     }
     
     .images{
     border: 4px solid black;
-    max-width: 680px;
-    max-height: 680px;
-    min-height: 550px;
+    max-width: 500px;
+    max-height: 400px;
+    min-height: 300px;
     }
     }
   
