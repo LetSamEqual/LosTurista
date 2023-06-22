@@ -1,5 +1,3 @@
-
-
 .tileContainer {
   width: 400px;
   height: 100%;
@@ -11,56 +9,68 @@
   justify-content: flex-start;
   transition: 0.5s;
   border-radius: 10px;
+  opacity: 0;
 }
 
-.backgroundSalmon{
+.backgroundSalmon {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
 }
 
-.backgroundSalmon:hover{
+.backgroundSalmon:hover {
   background-color: #886176;
 }
 
-.backgroundBlue{
+.backgroundBlue {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
 }
 
-.backgroundBlue:hover{
+.backgroundBlue:hover {
   background-color: #384865;
 }
 
-.backgroundLightBlue{
+.backgroundLightBlue {
   background-color: #343330;
   transition: 0.5s;
   color: rgb(198, 197, 197);
 }
 
-.backgroundLightBlue:hover{
+.backgroundLightBlue:hover {
   background-color: #5780a5;
 }
 
-.backgroundYellow{
+.backgroundYellow {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
 }
 
-.backgroundYellow:hover{
+.backgroundYellow:hover {
   background-color: #a07d37;
 }
 
-.backgroundGreen{
+.backgroundGreen {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
 }
 
-.backgroundGreen:hover{
+.backgroundGreen:hover {
   background-color: #415844;
+}
+
+.visibleTile {
+  animation: tileFadeIn 2s ease 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tileFadeIn {
+  100% {
+    opacity: 1;
+  }
 }
 
 .tileImage {
@@ -68,7 +78,7 @@
   height: 350px;
 }
 
-.tileImageTopAndBottomBorder{
+.tileImageTopAndBottomBorder {
   padding: 8px;
   background-color: black;
   border-radius: 5px;
@@ -91,15 +101,14 @@
   justify-content: center;
   font-family: "Archivo Narrow", sans-serif;
   font-size: 1em;
-
 }
 
 .tileHeading {
   display: inline;
   font-size: 2em;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   text-align: center;
   margin: 0px;
 }
@@ -109,21 +118,21 @@
   height: 100%;
   font-family: "Cormorant", serif;
   font-size: 1.5em;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.tileSubheader{
+.tileSubheader {
   margin: 10px;
 }
 
-.tileContainer:hover{
+.tileContainer:hover {
   transform: scale(1.02);
 }
 
 @media only screen and (max-width: 480px) {
-  .tileContainer{
+  .tileContainer {
     width: 250px;
   }
 
@@ -132,21 +141,21 @@
     height: 250px;
   }
 
-  .tileHeadingContainer{
+  .tileHeadingContainer {
     margin-top: 10px;
   }
 
-  .tileHeading{
+  .tileHeading {
     font-size: 1.9em;
   }
 
-  .tileSubheaderContainer{
+  .tileSubheaderContainer {
     font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 481) and (max-width: 768px) {
-  .tileContainer{
+  .tileContainer {
     width: 450px;
   }
 
@@ -155,22 +164,21 @@
     height: 400px;
   }
 
-  .tileHeadingContainer{
+  .tileHeadingContainer {
     margin-top: 10px;
   }
 
-  .tileHeading{
+  .tileHeading {
     font-size: 2.5em;
   }
 
-  .tileSubheaderContainer{
+  .tileSubheaderContainer {
     font-size: 2em;
   }
-
 }
 
 @media only screen and (min-width: 700px) and (max-width: 980px) {
-  .tileContainer{
+  .tileContainer {
     width: 500px;
   }
 
@@ -179,18 +187,17 @@
     height: 400px;
   }
 
-  .tileHeadingContainer{
+  .tileHeadingContainer {
     margin-top: 15px;
   }
 
-  .tileHeading{
+  .tileHeading {
     font-size: 2.3em;
   }
 
-  .tileSubheaderContainer{
+  .tileSubheaderContainer {
     font-size: 1.8em;
   }
-
 }
 
 /* @media (min-width:320px)

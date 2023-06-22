@@ -1,4 +1,5 @@
 import "./blogPostTiles.css";
+import { useEffect, useRef, useState } from "react";
 
 const BlogPostTile = ({ blogPostData }) => {
   const backgroundImageStyle = {
@@ -6,15 +7,39 @@ const BlogPostTile = ({ blogPostData }) => {
     backgroundSize: "cover",
   };
 
-  const backgroundColours = ["backgroundSalmon", "backgroundBlue", "backgroundLightBlue", "backgroundYellow", "backgroundGreen"];
+  const backgroundColours = [
+    "backgroundSalmon",
+    "backgroundBlue",
+    "backgroundLightBlue",
+    "backgroundYellow",
+    "backgroundGreen",
+  ];
 
   function getBackgroundColour(potentialColours) {
     const rndmNumber = Math.floor(Math.random() * 5);
-    return backgroundColours[rndmNumber]
+    return backgroundColours[rndmNumber];
   }
 
+  const tileRef = useRef();
+
+  const [tileIsVisible, setTileIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if(entry.isIntersecting){setTileIsVisible(true)}
+    });
+    observer.observe(tileRef.current);
+  }, []);
+
   return (
-    <div className={`tileContainer ${getBackgroundColour(backgroundColours)}`} >
+    <div
+      ref={tileRef}
+      className={
+        `tileContainer ${getBackgroundColour(backgroundColours)} ` +
+        (tileIsVisible ? "visibleTile" : "hiddenTile")
+      }
+    >
       <div className="tileImageTopAndBottomBorder">
         <div className="tileImage" style={backgroundImageStyle}></div>
       </div>
