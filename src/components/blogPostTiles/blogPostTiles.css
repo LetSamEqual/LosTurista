@@ -18,18 +18,10 @@
   transition: 0.5s;
 }
 
-.backgroundSalmon:hover {
-  background-color: #886176;
-}
-
 .backgroundBlue {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
-}
-
-.backgroundBlue:hover {
-  background-color: #384865;
 }
 
 .backgroundLightBlue {
@@ -38,28 +30,16 @@
   color: rgb(198, 197, 197);
 }
 
-.backgroundLightBlue:hover {
-  background-color: #5780a5;
-}
-
 .backgroundYellow {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
 }
 
-.backgroundYellow:hover {
-  background-color: #a07d37;
-}
-
 .backgroundGreen {
   background-color: #343330;
   color: rgb(198, 197, 197);
   transition: 0.5s;
-}
-
-.backgroundGreen:hover {
-  background-color: #415844;
 }
 
 .visibleTile {
@@ -127,8 +107,26 @@
   margin: 10px;
 }
 
-.tileContainer:hover {
-  transform: scale(1.02);
+
+@media (hover: hover) {
+  .backgroundSalmon:hover {
+    background-color: #886176;
+  }
+  .backgroundBlue:hover {
+    background-color: #384865;
+  }
+  .backgroundLightBlue:hover {
+    background-color: #5780a5;
+  }
+  .backgroundYellow:hover {
+    background-color: #a07d37;
+  }
+  .backgroundGreen:hover {
+    background-color: #415844;
+  }
+  .tileContainer:hover {
+    transform: scale(1.02);
+  }
 }
 
 @media only screen and (max-width: 480px) {

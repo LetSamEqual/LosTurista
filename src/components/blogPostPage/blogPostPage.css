@@ -60,30 +60,34 @@
   transform: translate(15px, 0px);
 }
 
+@media (hover: hover) {
 
-.backButton:hover {
-  background: #343330;
-  width: 140px;
+  .backButton:hover {
+    background: #343330;
+    width: 140px;
+  }
+  
+  .backButton:hover .secondChild,
+  .backButton:hover .thirdChild,
+  .backButton:hover .fifthChild,
+  .backButton:hover .seventhChild,
+  .backButton:hover .eightChild,
+  .backButton:hover .ninthChild,
+  .backButton:hover .tenthChild,
+  .backButton:hover .eleventhChild {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+  
+  .backButton:hover .firstChild,
+  .backButton:hover .fourthChild,
+  .backButton:hover .sixthChild {
+    transform: translate(0px, 0px);
+  }
 }
 
-.backButton:hover .secondChild,
-.backButton:hover .thirdChild,
-.backButton:hover .fifthChild,
-.backButton:hover .seventhChild,
-.backButton:hover .eightChild,
-.backButton:hover .ninthChild,
-.backButton:hover .tenthChild,
-.backButton:hover .eleventhChild {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-}
 
-.backButton:hover .firstChild,
-.backButton:hover .fourthChild,
-.backButton:hover .sixthChild {
-  transform: translate(0px, 0px);
-}
 
 .active {
   transform: translate(0px, 0px);
