@@ -3,7 +3,6 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import blogPosts from "../../blogPosts/blogPosts.json";
 import ImageCarousel from "../imageCarousel/imageCarousel";
 import "./blogPostPage.css";
-import { useEffect } from "react";
 import { useState } from "react";
 
 const BlogPostPage = () => {
