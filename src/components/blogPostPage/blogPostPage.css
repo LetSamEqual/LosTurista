@@ -1,3 +1,98 @@
+.backButton {
+  text-align: center;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: fit-content;
+  text-decoration: none;
+  padding: 10px;
+  background: #34333081;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 10px;
+  color: rgba(245, 245, 245, 0.74);
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.firstChild,
+.fourthChild,
+.sixthChild {
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.secondChild,
+.thirdChild,
+.fifthChild,
+.seventhChild,
+.eightChild,
+.ninthChild,
+.tenthChild,
+.eleventhChild {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.firstChild {
+  transform: translate(22px, 0px);
+}
+
+
+.fourthChild {
+  transform: translate(14px, 0px);
+}
+
+
+.sixthChild {
+  transform: translate(15px, 0px);
+}
+
+
+.backButton:hover {
+  background: #343330;
+  width: 140px;
+}
+
+.backButton:hover .secondChild,
+.backButton:hover .thirdChild,
+.backButton:hover .fifthChild,
+.backButton:hover .seventhChild,
+.backButton:hover .eightChild,
+.backButton:hover .ninthChild,
+.backButton:hover .tenthChild,
+.backButton:hover .eleventhChild {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.backButton:hover .firstChild,
+.backButton:hover .fourthChild,
+.backButton:hover .sixthChild {
+  transform: translate(0px, 0px);
+}
+
+.active {
+  transform: translate(0px, 15px);
+}
+
+.hidden {
+  transform: translate(0px, -100px);
+}
+
 .blogPostPage {
   background-color: #817e7b;
   display: flex;
@@ -9,7 +104,7 @@
   height: 100vh;
   overflow: scroll;
   background-size: cover;
- background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .blogPostContent {
@@ -48,25 +143,23 @@
   font-size: calc(20px + 3 * ((100vw - 320px) / 680));
 }
 
-h1{
-    margin: 0px;
+h1 {
+  margin: 0px;
 }
 @media only screen and (max-width: 480px) {
-    .blogPostContent {
-        width: 94%;
-    }
+  .blogPostContent {
+    width: 94%;
   }
-  
-  
-  @media only screen and (min-width: 481px) and (max-width: 699px) {
-    .blogPostContent {
-        width: 94%;
-    }
-    }
-  
-  
-  @media only screen and (min-width: 700px) and (max-width: 980px) {
-    .blogPostContent {
-        width: 94%;
-    }
-    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 699px) {
+  .blogPostContent {
+    width: 94%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+  .blogPostContent {
+    width: 94%;
+  }
+}

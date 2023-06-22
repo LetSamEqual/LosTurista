@@ -3,15 +3,12 @@ import "./imageCarousel.css";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ImageCarousel = ({ images }) => {
-  console.log(images);
   const [carouselImage, setCarouselImage] = useState(0);
-  console.log(carouselImage);
 
   const imageCounterUp = () => {
     const imageArrayLength = images.length - 1
     if (carouselImage < imageArrayLength) {
       setCarouselImage(carouselImage + 1);
-      console.log(carouselImage);
     } else {
       setCarouselImage(0);
     }
@@ -20,13 +17,11 @@ const ImageCarousel = ({ images }) => {
   const imageCounterDown = () => {
     if (carouselImage !== 0) {
       setCarouselImage(carouselImage - 1);
-      console.log(carouselImage);
     } else {
       setCarouselImage(images.length - 1);
     }
   };
 
-  console.log(images.length)
 
   return (
     <div className="imageCarouselContainer">

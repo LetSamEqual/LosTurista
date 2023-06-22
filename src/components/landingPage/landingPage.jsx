@@ -8,9 +8,6 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div className="landingPageContainer">
-      <div className="blogTitleContainer">
-        <h1 className="blogTitle">O O O</h1>
-      </div>
       <div className="headingImageContainer">
         <div className="blogIntroContainer">
           <h2 className="blogIntroTitle">
@@ -20,10 +17,9 @@ const LandingPage = () => {
           <div className="blogIntroSubheaderContainer">
             <h3 className="blogIntroSubheader">Dear sir/madam</h3>
             <h3 className="blogIntroSubheader">
-              Thank you so much for your enquiry. Unfortunately I’m
-              unable to help with this matter as I’m currently out of office, on
-              the other side of the world, attempting to avoid emails just
-              like yours.
+              Thank you so much for your enquiry. Unfortunately I’m unable to
+              help with this matter as I’m currently out of office, on the other
+              side of the world, attempting to avoid emails just like yours.
             </h3>
             <h3 className="blogIntroSubheader">
               Luckily the reception here is patchy, and my return date is
@@ -42,7 +38,10 @@ const LandingPage = () => {
         {blogPosts.map((blogPostData) => {
           return (
             <Link to={`/${blogPostData.slug}`} className="tileLinks">
-              <BlogPostTile key={blogPostData.key} blogPostData={blogPostData} />
+              <BlogPostTile
+                key={blogPostData.key}
+                blogPostData={blogPostData}
+              />
             </Link>
           );
         })}
