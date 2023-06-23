@@ -5,9 +5,6 @@
   background-color: #343330;
 }
 
-
-
-
 .headingImageContainer {
   height: 100svh;
   height: 100vh;
@@ -23,10 +20,11 @@
   overflow: scroll;
 }
 
+/* intro container effects */
+
 .blogIntroContainer {
   opacity: 0;
   text-align: left;
-  min-height: 550px;
   max-width: 35vw;
   min-width: 380px;
   border-radius: 20px;
@@ -37,32 +35,51 @@
   justify-content: flex-end;
   background-color: rgba(245, 245, 245, 0.36);
   margin-left: 60px;
-  animation: fadeIn 2s ease 0.5s 1;
+  animation: fadeIn 0.5s ease 0.75s 1;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
-  0%{
+  0% {
     opacity: 0;
-    transform: translate(0px, 60px);
+    transform: translate(-100px, 0px);
   }
 
-  100%{
+  75% {
     opacity: 1;
-    transform: translate(0px, 0px);
+    transform: translate(15px, 0px) skew(-5deg, 0deg);
   }
-  
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
 
-.tileLinks {
-  color: inherit;
-  text-decoration: inherit;
+.introContainerClosed {
+  height: fit-content;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.796);
+}
+
+.clickToRead {
+  opacity: 1;
+  visibility: 1;
+  display: block;
+  font-size: calc(15px + 2 * ((100vw - 320px) / 680));
+}
+
+.clickToReadHidden {
+  opacity: 0;
+  visibility: 0;
+  display: none;
 }
 
 .blogIntroTitle {
   font-family: "Archivo Narrow", sans-serif;
   font-size: clamp(1rem, 1.9vw + 1rem, 2.5rem);
-  font-style: italic;
   color: #343330;
   width: 87%;
   margin: 10px;
@@ -70,6 +87,8 @@
 }
 
 .blogIntroSubheaderContainer {
+  visibility: hidden;
+  opacity: 1;
   background-color: rgba(245, 245, 245, 0.796);
   border-radius: 0px 0px 20px 20px;
   padding-left: 20px;
@@ -77,10 +96,20 @@
   border-top: 2px solid #343330;
 }
 
+.emailOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.emailClosed {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
 .blogIntroSubheader {
   font-family: "Archivo Narrow", sans-serif;
   font-size: calc(19px + 2 * ((100vw - 320px) / 680));
-  font-style: italic;
   color: #343330;
   text-align: left;
   width: 87%;
@@ -89,8 +118,55 @@
   padding: 0;
 }
 
-.blogPostTilesContainer {
-  margin: 100px;
+/* blog intro effects finish */
+
+/* itinerary/tiles buttons */
+
+.blogOrTileButtonsContainer {
+  margin-top: 30px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: calc(22px + 2 * ((100vw - 320px) / 680));
+
+}
+
+.blogOrTileButtons {
+  font-family: "Archivo Narrow", sans-serif;
+  color: whitesmoke
+}
+
+.showBlogButtonActive {
+  border-bottom: 3px solid rgb(178, 178, 178);
+}
+
+.showItineraryButtonActive {
+  border-bottom: 3px solid rgb(178, 178, 178);
+}
+
+/* itinerary/tiles effects */
+
+.itineraryVisible {
+  visibility: visible;
+  opacity: 1;
+}
+.itineraryHidden {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.tilesHidden {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.tilesVisible {
+  margin-top: 100px;
+  margin-bottom: 100px;
   max-width: 1000px;
   padding: 20px;
   display: flex;
@@ -98,23 +174,54 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  border-left: 3px solid rgb(178, 178, 178);
-  border-right: 3px solid rgb(178, 178, 178);
+}
+
+/* tile effects */
+
+.tileLinks {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 @media only screen and (max-width: 480px) {
-
-
   .headingImageContainer {
     background-position: left 56% bottom 0%;
     min-width: 280px;
   }
 
   .blogIntroContainer {
-    min-width: 235px;
+    min-width: 245px;
     margin-left: 15px;
     border-radius: 20px;
-    background-color: rgba(245, 245, 245, 0.36)
+    background-color: rgba(245, 245, 245, 0.36);
+  }
+
+  .blogIntroTitle {
+    font-size: clamp(1rem, 1.5vw + 1.2rem, 4rem);
+    padding-left: 10px;
+  }
+
+  .blogIntroSubheaderContainer {
+    padding-left: 10px;
+  }
+
+  .blogIntroSubheader {
+    line-height: 1.2;
+    font-size: calc(18px + 3 * ((100vw - 320px) / 680));
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 699px) {
+  .headingImageContainer {
+    background-position: left 55% bottom 0%;
+    min-width: 480px;
+  }
+
+  .blogIntroContainer {
+    min-width: 290px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.36);
   }
 
   .blogIntroTitle {
@@ -132,67 +239,30 @@
   }
 }
 
-
-@media only screen and (min-width: 481px) and (max-width: 699px) {
-
-
-    .headingImageContainer {
-      background-position: left 55% bottom 0%;
-      min-width: 480px;
-    }
-  
-    .blogIntroContainer {
-      min-width: 290px;
-      margin-left: 20px;
-      border-radius: 20px;
-      background-color: rgba(245, 245, 245, 0.36)
-    }
-  
-    .blogIntroTitle {
-      font-size: clamp(1rem, 1.7vw + 1.2rem, 4rem);
-      padding-left: 10px;
-    }
-  
-    .blogIntroSubheaderContainer {
-      padding-left: 10px;
-    }
-  
-    .blogIntroSubheader {
-      line-height: 1.2;
-      font-size: calc(18px + 3 * ((100vw - 320px) / 680));
-    }
-  }
-
-
 @media only screen and (min-width: 700px) and (max-width: 980px) {
-
-
-  
-    .headingImageContainer {
-      background-position: left 55% bottom 0%;
-      min-width: 480px;
-    }
-  
-    .blogIntroContainer {
-      min-width: 360px;
-      margin-left: 30px;
-      border-radius: 20px;
-      background-color: rgba(245, 245, 245, 0.36)
-    }
-  
-    .blogIntroTitle {
-      font-size: clamp(1rem, 1.7vw + 1.2rem, 4rem);
-      padding-left: 10px;
-    }
-  
-    .blogIntroSubheaderContainer {
-      padding-left: 10px;
-    }
-  
-    .blogIntroSubheader {
-      line-height: 1.2;
-      font-size: calc(18px + 3 * ((100vw - 320px) / 680));
-    }
+  .headingImageContainer {
+    background-position: left 55% bottom 0%;
+    min-width: 480px;
   }
 
+  .blogIntroContainer {
+    min-width: 360px;
+    margin-left: 30px;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.36);
+  }
 
+  .blogIntroTitle {
+    font-size: clamp(1rem, 1.7vw + 1.2rem, 4rem);
+    padding-left: 10px;
+  }
+
+  .blogIntroSubheaderContainer {
+    padding-left: 10px;
+  }
+
+  .blogIntroSubheader {
+    line-height: 1.2;
+    font-size: calc(18px + 3 * ((100vw - 320px) / 680));
+  }
+}

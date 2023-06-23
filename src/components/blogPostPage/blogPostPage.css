@@ -151,18 +151,30 @@ h1 {
   margin: 0px;
 }
 @media only screen and (max-width: 480px) {
+  .backButton{
+    margin-top: 35px;
+  }
+
   .blogPostContent {
     width: 94%;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 699px) {
+  .backButton{
+    margin-top: 35px;
+  }
+
   .blogPostContent {
     width: 94%;
   }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 980px) {
+  .backButton{
+    margin-top: 35px;
+  }
+  
   .blogPostContent {
     width: 94%;
   }

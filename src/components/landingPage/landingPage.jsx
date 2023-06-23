@@ -4,19 +4,63 @@ import blogPosts from "../../blogPosts/blogPosts.json";
 import BlogPostTile from "../blogPostTiles/blogPostTiles";
 
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
+import ItineraryPage from "../itineraryPage/itineraryPage";
 const LandingPage = () => {
- 
+  const [emailIsOpen, setEmailIsOpen] = useState(false);
+  const [itineraryIsVisible, setItineraryIsVisible] = useState(false);
+  const [tilesAreVisible, setTilesAreVisible] = useState(true);
+
+  const showEmail = () => {
+    setEmailIsOpen(!emailIsOpen);
+  };
+
+  const showItinerary = () => {
+    if (!itineraryIsVisible) {
+      setItineraryIsVisible(!itineraryIsVisible);
+      setTilesAreVisible(!tilesAreVisible);
+      console.log(itineraryIsVisible);
+      console.log(tilesAreVisible);
+    } else {
+      return;
+    }
+  };
+
+  const showBlogTiles = () => {
+    if (!tilesAreVisible) {
+      setItineraryIsVisible(!itineraryIsVisible);
+      setTilesAreVisible(!tilesAreVisible);
+      console.log(itineraryIsVisible);
+      console.log(tilesAreVisible);
+    } else {
+      return;
+    }
+  };
 
   return (
     <div className="landingPageContainer">
       <div className="headingImageContainer">
-        <div className="blogIntroContainer">
+        <div
+          className={
+            "blogIntroContainer " +
+            (emailIsOpen ? "introContainerOpen" : "introContainerClosed")
+          }
+          onClick={() => showEmail()}
+        >
           <h2 className="blogIntroTitle">
-            To: All <br />
+            New message
+            <br />
             Subject: Out of office
           </h2>
-          <div className="blogIntroSubheaderContainer">
+          <h3 className={emailIsOpen ? "clickToReadHidden" : "clickToRead"}>
+            Click to read
+          </h3>
+          <div
+            className={
+              "blogIntroSubheaderContainer " +
+              (emailIsOpen ? "emailOpen" : "emailClosed")
+            }
+          >
             <h3 className="blogIntroSubheader">Dear sir/madam</h3>
             <h3 className="blogIntroSubheader">
               Thank you so much for your enquiry. Unfortunately I’m unable to
@@ -36,7 +80,45 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="blogPostTilesContainer">
+      <div className="blogOrTileButtonsContainer">
+        <button
+          className={
+            "blogOrTileButtons " +
+            (tilesAreVisible
+              ? "showBlogButtonActive"
+              : "showBlogButtonNotActive")
+          }
+          onClick={() => {
+            showBlogTiles();
+          }}
+        >
+          What’s he saying now?
+        </button>
+        <button
+          className={
+            "blogOrTileButtons " +
+            (itineraryIsVisible
+              ? "showItineraryButtonActive"
+              : "showItineraryButtonNotActive")
+          }
+          onClick={() => {
+            showItinerary();
+          }}
+        >
+          Where is he going again?
+        </button>
+      </div>
+      <div
+        className={itineraryIsVisible ? "itineraryVisible" : "itineraryHidden"}
+      >
+        <ItineraryPage />
+      </div>
+      <div
+        className={
+          "blogPostTilesContainer " +
+          (tilesAreVisible ? "tilesVisible" : "tilesHidden")
+        }
+      >
         {blogPosts.map((blogPostData) => {
           return (
             <Link to={`/${blogPostData.slug}`} className="tileLinks">

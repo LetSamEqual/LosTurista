@@ -1,0 +1,88 @@
+.backButton {
+    text-align: center;
+    position: absolute;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: fit-content;
+    text-decoration: none;
+    padding: 10px;
+    background: #34333000;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: rgba(245, 245, 245, 0.74);
+    font-family: "Josefin Sans", sans-serif;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  
+  .firstChild,
+  .fourthChild,
+  .sixthChild {
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  
+  .secondChild,
+  .thirdChild,
+  .fifthChild,
+  .seventhChild,
+  .eightChild,
+  .ninthChild,
+  .tenthChild,
+  .eleventhChild {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .firstChild {
+    transform: translate(22px, 0px);
+  }
+  
+  
+  .fourthChild {
+    transform: translate(14px, 0px);
+  }
+  
+  
+  .sixthChild {
+    transform: translate(15px, 0px);
+  }
+  
+  @media (hover: hover) {
+  
+    .backButton:hover {
+      background: #3433306d;
+      width: 140px;
+    }
+    
+    .backButton:hover .secondChild,
+    .backButton:hover .thirdChild,
+    .backButton:hover .fifthChild,
+    .backButton:hover .seventhChild,
+    .backButton:hover .eightChild,
+    .backButton:hover .ninthChild,
+    .backButton:hover .tenthChild,
+    .backButton:hover .eleventhChild {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s linear;
+    }
+    
+    .backButton:hover .firstChild,
+    .backButton:hover .fourthChild,
+    .backButton:hover .sixthChild {
+      transform: translate(0px, 0px);
+    }
+  }
