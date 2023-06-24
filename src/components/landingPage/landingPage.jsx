@@ -47,10 +47,9 @@ const LandingPage = () => {
           }
           onClick={() => showEmail()}
         >
-          <h2 className="blogIntroTitle">
-            New message
-            <br />
-            Subject: Out of office
+          <h2 className="newMessage">
+            New message</h2>
+            <h2 className="blogIntroTitle">Subject: Out of office
           </h2>
           <h3 className={emailIsOpen ? "clickToReadHidden" : "clickToRead"}>
             Click to read

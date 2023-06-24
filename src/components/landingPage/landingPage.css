@@ -33,9 +33,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgba(245, 245, 245, 0.36);
+  background-color: rgba(245, 245, 245, 0.413);
+  backdrop-filter: blur(10px);
   margin-left: 60px;
-  animation: fadeIn 0.5s ease 0.75s 1;
+  animation: fadeIn 0.5s ease 1s 1;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
@@ -43,17 +44,19 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translate(-100px, 0px);
+    transform: translate(0px, 50px);
   }
 
   75% {
     opacity: 1;
-    transform: translate(15px, 0px) skew(-5deg, 0deg);
+    transform: translate(0px, -5px);
+
   }
 
   100% {
     transform: translate(0px, 0px);
     opacity: 1;
+
   }
 }
 
@@ -61,7 +64,8 @@
   height: fit-content;
   overflow: hidden;
   justify-content: center;
-  background-color: rgba(245, 245, 245, 0.796);
+  background-color: rgba(245, 245, 245, 0.36);
+  backdrop-filter: blur(5px);
 }
 
 .clickToRead {
@@ -77,19 +81,26 @@
   display: none;
 }
 
+.newMessage {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: clamp(1rem, 1.2vw + 1rem, 2.5rem);
+  color: #343330f3;
+  margin: 0px;
+  margin-top: 5px;
+  padding: 0;
+}
+
 .blogIntroTitle {
   font-family: "Archivo Narrow", sans-serif;
   font-size: clamp(1rem, 1.9vw + 1rem, 2.5rem);
-  color: #343330;
-  width: 87%;
-  margin: 10px;
+  color: #343330f3;
+  margin: 0px;
   padding: 0;
 }
 
 .blogIntroSubheaderContainer {
   visibility: hidden;
   opacity: 1;
-  background-color: rgba(245, 245, 245, 0.796);
   border-radius: 0px 0px 20px 20px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -110,7 +121,7 @@
 .blogIntroSubheader {
   font-family: "Archivo Narrow", sans-serif;
   font-size: calc(19px + 2 * ((100vw - 320px) / 680));
-  color: #343330;
+  color: #343330f3;
   text-align: left;
   width: 87%;
   line-height: clamp(1.5);
@@ -130,12 +141,11 @@
   justify-content: center;
   gap: 40px;
   font-size: calc(22px + 2 * ((100vw - 320px) / 680));
-
 }
 
 .blogOrTileButtons {
   font-family: "Archivo Narrow", sans-serif;
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .showBlogButtonActive {
