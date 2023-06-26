@@ -92,7 +92,7 @@ const LandingPage = () => {
             showBlogTiles();
           }}
         >
-          What’s he saying now?
+          Follow the journey
         </button>
         <button
           className={
@@ -105,7 +105,7 @@ const LandingPage = () => {
             showItinerary();
           }}
         >
-          And where’s he going next?
+          See the plan
         </button>
       </div>
       <div

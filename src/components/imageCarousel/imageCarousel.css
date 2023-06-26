@@ -65,6 +65,7 @@
 .fullscreenImages {
   max-width: 85vw;
   max-height: 85vh;
+  background-color: black;
 }
 
 .fullscreenWittyDescription {
