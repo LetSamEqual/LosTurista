@@ -47,6 +47,7 @@ const BlogPostTile = ({ blogPostData }) => {
         <div className="tileHeadingContainer">
           <h2 className="tileHeading">{blogPostData.tileTitle}</h2>
         </div>
+        <h4>{blogPostData.blogDate}</h4>
         <div className="tileSubheaderContainer">
           <p className="tileSubheader">{blogPostData.tileSubheader}</p>
         </div>
