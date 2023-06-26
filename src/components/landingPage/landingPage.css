@@ -73,7 +73,8 @@
   opacity: 1;
   visibility: 1;
   display: block;
-  font-size: calc(15px + 2 * ((100vw - 320px) / 680));
+  font-size: calc(18px + 2 * ((100vw - 320px) / 680));
+  font-family: "Archivo Narrow", sans-serif;
 }
 
 .clickToReadHidden {
