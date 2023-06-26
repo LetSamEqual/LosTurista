@@ -55,7 +55,7 @@
   height: 40px;
   position: absolute;
   left: 5vw;
-  top: 5vh;
+  top: 7vh;
   font-size: calc(30px + 10 * ((100vw - 320px) / 680));
   color: whitesmoke;
   z-index: 9999;
