@@ -134,6 +134,18 @@
 
 /* blog intro effects finish */
 
+.blogBlurb{
+  color: rgb(198, 197, 197);
+  text-align: center;
+  width: 60vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  font-style: italic;
+}
+
 /* itinerary/tiles buttons */
 
 .blogOrTileButtonsContainer {

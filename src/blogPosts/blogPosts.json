@@ -23,13 +23,13 @@
         "key": "102",
         "url": "https://sthamericablogphotos.s3.ap-southeast-2.amazonaws.com/tile-image-folder/pexels-elisabeth-ende-7431676.jpg",
         "altText": "Lorem ipsum",
-         "wittyDescription": "Lorem ipsum"
+         "wittyDescription": "Lorem ipsum 1"
       },
       {
         "key": "103",
         "url": "https://sthamericablogphotos.s3.ap-southeast-2.amazonaws.com/blogpostbackgroundimages/pexels-clive-kim-4150118+(1).jpg",
         "altText": "Lorem ipsum",
-         "wittyDescription": "Lorem ipsum"
+         "wittyDescription": "Lorem ipsum 2"
       }
     ]
   }

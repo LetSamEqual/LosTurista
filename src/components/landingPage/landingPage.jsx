@@ -77,6 +77,9 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <div>
+        <h2 className="blogBlurb">Across a desert, over a waterfall, up a mountain and out of office, full-time layabout Sam ‘Scip’ Henderson is currently holding a map upside down, trying to figure out how he got here, where he’s supposed to go next and if, just maybe, there’s a reason to any of this. <br/><br/> The stories below are an account of his efforts.</h2>
+      </div>
       <div className="blogOrTileButtonsContainer">
         <button
           className={
@@ -102,7 +105,7 @@ const LandingPage = () => {
             showItinerary();
           }}
         >
-          Where is he going again?
+          And where’s he going next?
         </button>
       </div>
       <div
