@@ -58,9 +58,11 @@ const BlogPostPage = () => {
                   className="carouselOnPage"
                   images={posts.imageCarousel}
                 />
-                <ReactMarkdown className="blogPostBodyCopy">
-                  {posts.blogPostBodyCopy}
-                </ReactMarkdown>
+                <div className="blogPostBodyCopy">
+                  {posts.blogPostBodyCopy.map((paragraphs) => {
+                    return <ReactMarkdown>{paragraphs}</ReactMarkdown>;
+                  })}
+                </div>
               </div>
             </div>
           );

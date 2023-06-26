@@ -124,6 +124,10 @@
   margin-bottom: 10vh;
 }
 
+h3{
+  text-align: center;
+}
+
 .blogPostTitle {
   text-align: center;
   width: 80%;
@@ -150,6 +154,11 @@
 h1 {
   margin: 0px;
 }
+
+p{
+  margin: 13px;
+}
+
 @media only screen and (max-width: 480px) {
   .backButton{
     margin-top: 35px;

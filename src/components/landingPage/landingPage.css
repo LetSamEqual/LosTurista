@@ -50,13 +50,11 @@
   75% {
     opacity: 1;
     transform: translate(0px, -5px);
-
   }
 
   100% {
     transform: translate(0px, 0px);
     opacity: 1;
-
   }
 }
 
@@ -135,6 +133,8 @@
 
 .blogOrTileButtonsContainer {
   margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 100vw;
   display: flex;
   align-items: center;
